@@ -15,6 +15,8 @@ f = @(x) fun_u(x, m, g, K, d, h);
 
 u_eq = [fzero(f, -1000), fzero(f, 0.4)]
 
+%% Plot do Gráfico
+
 fig = figure();
 
 plot(u, f(u)/1000, 'r-', 'LineWidth', 1.5);
